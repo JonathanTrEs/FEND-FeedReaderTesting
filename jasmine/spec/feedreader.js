@@ -72,7 +72,7 @@ $(function() {
 
             //Click the button and check that the menu is visible
             $(menuIcon).trigger('click');
-            expect(body.classList.length).toBe(0);
+            expect($('body').hasClass("menu-hidden")).toBeFalsy();
 
             //Click again the button and check that the menu is have been hide
             $(menuIcon).trigger('click');
